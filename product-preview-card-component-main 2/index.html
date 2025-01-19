@@ -19,7 +19,13 @@
   <body>
     <div class="Flexcontainer">
       <div class="image-box">
-        <img src="images/image-product-desktop.jpg" alt="Product Image" />
+        <picture>
+          <source
+            srcset="images/image-product-mobile.jpg"
+            media="(max-width: 375px)"
+          />
+          <img src="images/image-product-desktop.jpg" alt="Product Image" />
+        </picture>
       </div>
       <div class="text-box">
         <h1 class="headingOne">PERFUME</h1>
