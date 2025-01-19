@@ -4,14 +4,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: hsl(30, 38%, 92%);
 }
 
 .Flexcontainer {
   display: flex;
-  border: 2px solid #4b464a;
+  border: none;
+  background-color: white;
   border-radius: 0.5em;
   overflow: hidden;
-  width: 600px;
+  width: 380px;
   height: 300px;
 }
 
@@ -27,6 +29,81 @@ body {
 
 .text-box {
   flex: 1;
-  padding: 20px;
+  padding: 14px;
   font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat-VariableFont_wght.ttf");
+}
+
+.headingOne {
+  font-family: "Montserrat";
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+
+.name {
+  font-family: "Fraunces";
+  line-height: 1;
+  font-size: 22px;
+  font-weight: 700;
+}
+.headingBox {
+  width: 150px;
+}
+
+.paragraph {
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+
+.newPrice {
+  font-family: "Fraunces";
+  font-weight: 800;
+  font-size: 22px;
+  vertical-align: bottom;
+  padding: 0px;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 9px;
+  padding-left: 10px;
+  color: black;
+  text-decoration: line-through;
+  vertical-align: middle;
+}
+
+.cart-button {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  width: 170px;
+  height: 32px;
+  border-radius: 0.4em;
+  border-style: none;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 0.8em;
+}
+
+.cartImg {
+  width: 8px;
+  padding-right: 0.5em;
 }
